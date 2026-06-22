@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Sam.ConfirmIndoctrination</AssemblyName>
+    <RootNamespace>Sam.ConfirmIndoctrination</RootNamespace>
+    <Product>Sam ConfirmIndoctrination</Product>
+    <Version>1.1.0</Version>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <EmbedAllSources>true</EmbedAllSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\en.json" />
+    <EmbeddedResource Include="Localization\ru.json" />
+  </ItemGroup>
+
+</Project>

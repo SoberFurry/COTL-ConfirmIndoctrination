@@ -1,0 +1,7 @@
+{
+  "confirm.title": "Accept this follower into the cult?",
+  "confirm.accept": "Accept",
+  "confirm.cancel": "Cancel",
+  "inside.cancel": "Cancel indoctrination",
+  "inside.hint": "Cancel indoctrination (experimental)"
+}
