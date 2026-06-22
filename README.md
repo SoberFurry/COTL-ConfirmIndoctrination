@@ -33,9 +33,8 @@ dotnet build src/Sam.ConfirmIndoctrination/Sam.ConfirmIndoctrination.csproj -c R
 ## Другие мои моды для Cult of the Lamb
 - [MultiNecklaces](https://github.com/SoberFurry/COTL-MultiNecklaces) — несколько ожерелий на последователе
 - [ConfirmIndoctrination](https://github.com/SoberFurry/COTL-ConfirmIndoctrination) — подтверждение при принятии последователя
-- Все моды автора: https://github.com/SoberFurry?tab=repositories
 
 ## Лицензия
-Автор: **SoberFurry**. Разрешено только **скачивание и использование** — изменение, переиздание и
+Автор: [SoberFurry](https://github.com/SoberFurry). Разрешено только **скачивание и использование** — изменение, переиздание и
 коммерческое использование запрещены без разрешения автора (см. [LICENSE](LICENSE)).
 Мод не содержит файлов игры.
