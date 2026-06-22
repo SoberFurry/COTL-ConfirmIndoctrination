@@ -1,9 +1,9 @@
 # Changelog — Sam ConfirmIndoctrination
 
-## 1.0.0
-- First release.
-- Confirmation popup before the first indoctrination of a new waiting follower.
-- One-shot bypass per follower id; AwaitRelease + debounce; default Cancel.
-- Re-indoctrination is never intercepted; fail-open filtering for tutorial/integration recruits.
-- Experimental in-screen cancel (off by default).
-- RU/EN localization. Mouse / keyboard / gamepad input.
+## 1.0.0 — первый выпуск
+- Подтверждение перед первым принятием нового ожидающего последователя.
+- Нативное круговое меню «Принять / Отмена» (удобно с геймпада; Escape/кнопка отмены = отказ).
+- «Принять» открывает штатный экран один раз; «Отмена» оставляет последователя без изменений.
+- Повторное посвящение уже принятого культиста не перехватывается; fail-open фильтры для
+  обучающих/интеграционных вызовов.
+- Русская и английская локализация.

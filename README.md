@@ -3,7 +3,7 @@
 BepInEx-мод для **Cult of the Lamb**: перед принятием нового последователя показывается подтверждение,
 чтобы случайным нажатием не запустить посвящение.
 
-**Версия:** 1.1.0 · **Зависимость:** BepInEx 5.4.x (COTL_API не нужен)
+**Версия:** 1.0.0 · **Зависимость:** BepInEx 5.4.x · **Автор:** [SoberFurry](https://github.com/SoberFurry)
 
 ## Демонстрация
 ![Круговое подтверждение: Принять / Отмена](docs/images/confirm-wheel.gif)
@@ -30,5 +30,12 @@ BepInEx-мод для **Cult of the Lamb**: перед принятием нов
 dotnet build src/Sam.ConfirmIndoctrination/Sam.ConfirmIndoctrination.csproj -c Release -p:GamePath="X:\путь\к\Cult of the Lamb"
 ```
 
+## Другие мои моды для Cult of the Lamb
+- [MultiNecklaces](https://github.com/SoberFurry/COTL-MultiNecklaces) — несколько ожерелий на последователе
+- [ConfirmIndoctrination](https://github.com/SoberFurry/COTL-ConfirmIndoctrination) — подтверждение при принятии последователя
+- Все моды автора: https://github.com/SoberFurry?tab=repositories
+
 ## Лицензия
-MIT. Мод не содержит файлов игры.
+Автор: **SoberFurry**. Разрешено только **скачивание и использование** — изменение, переиздание и
+коммерческое использование запрещены без разрешения автора (см. [LICENSE](LICENSE)).
+Мод не содержит файлов игры.

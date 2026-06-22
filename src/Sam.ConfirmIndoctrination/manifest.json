@@ -1,8 +1,8 @@
 {
   "name": "Sam_ConfirmIndoctrination",
   "version_number": "1.0.0",
-  "website_url": "",
-  "description": "Confirmation before accepting a new follower; safe cancel.",
+  "website_url": "https://github.com/SoberFurry/COTL-ConfirmIndoctrination",
+  "description": "Confirmation before accepting a new follower; safe cancel (gamepad-friendly radial menu).",
   "dependencies": [
     "BepInEx-BepInExPack_CultOfTheLamb-5.4.21"
   ]

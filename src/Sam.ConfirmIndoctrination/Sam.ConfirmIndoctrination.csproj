@@ -4,7 +4,7 @@
     <AssemblyName>Sam.ConfirmIndoctrination</AssemblyName>
     <RootNamespace>Sam.ConfirmIndoctrination</RootNamespace>
     <Product>Sam ConfirmIndoctrination</Product>
-    <Version>1.1.0</Version>
+    <Version>1.0.0</Version>
     <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
     <EmbedAllSources>true</EmbedAllSources>
   </PropertyGroup>
