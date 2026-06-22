@@ -10,7 +10,8 @@ using HarmonyLib;
 
 namespace SoberFurry.ConfirmIndoctrination;
 
-[BepInPlugin(Guid, "SoberFurry ConfirmIndoctrination", "1.0.0")]
+[BepInPlugin(Guid, "SoberFurry ConfirmIndoctrination", "1.1.0")]
+[BepInDependency("io.github.xhayper.COTL_API", BepInDependency.DependencyFlags.SoftDependency)]
 public sealed class Plugin : BaseUnityPlugin
 {
     public const string Guid = "com.soberfurry.cultofthelamb.confirmindoctrination";
@@ -26,7 +27,7 @@ public sealed class Plugin : BaseUnityPlugin
     private void Awake()
     {
         Log = Logger;
-        Log.LogInfo($"[{LogPrefix}] starting v1.0.0");
+        Log.LogInfo($"[{LogPrefix}] starting v1.1.0");
         try
         {
             Cfg = new PluginConfig(base.Config);
@@ -37,6 +38,10 @@ public sealed class Plugin : BaseUnityPlugin
             _harmony = new Harmony(Guid);
             _harmony.PatchAll(typeof(FollowerRecruitPatches));
             _harmony.PatchAll(typeof(IndoctrinationScreenPatches));
+
+#if COTL_API
+            CotlApiIntegration.TryRegisterSettings(); // optional: in-game "Mods" tab if COTL_API present
+#endif
 
             // Scene changes (pause -> main menu, biome transitions) must never leave a stale lock.
             UnityEngine.SceneManagement.SceneManager.sceneUnloaded += _ =>
