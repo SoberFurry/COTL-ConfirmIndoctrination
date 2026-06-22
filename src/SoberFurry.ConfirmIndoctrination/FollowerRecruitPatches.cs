@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using HarmonyLib;
 using UnityEngine;
 
-namespace Sam.ConfirmIndoctrination;
+namespace SoberFurry.ConfirmIndoctrination;
 
 /// <summary>
 /// Intercepts the FIRST acceptance of a new waiting follower (FollowerRecruit interaction) and shows

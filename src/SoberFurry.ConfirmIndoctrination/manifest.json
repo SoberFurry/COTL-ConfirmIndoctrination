@@ -1,5 +1,5 @@
 {
-  "name": "Sam_ConfirmIndoctrination",
+  "name": "SoberFurry_ConfirmIndoctrination",
   "version_number": "1.0.0",
   "website_url": "https://github.com/SoberFurry/COTL-ConfirmIndoctrination",
   "description": "Confirmation before accepting a new follower; safe cancel (gamepad-friendly radial menu).",

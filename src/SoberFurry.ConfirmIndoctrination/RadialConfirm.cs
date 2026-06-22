@@ -4,7 +4,7 @@ using Lamb.UI;
 using Lamb.UI.FollowerInteractionWheel;
 using src.Extensions;
 
-namespace Sam.ConfirmIndoctrination;
+namespace SoberFurry.ConfirmIndoctrination;
 
 /// <summary>
 /// Shows the confirmation as the game's NATIVE radial command wheel (gamepad-friendly, with built-in

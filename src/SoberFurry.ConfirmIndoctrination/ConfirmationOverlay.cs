@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Sam.ConfirmIndoctrination;
+namespace SoberFurry.ConfirmIndoctrination;
 
 /// <summary>
 /// Self-contained IMGUI confirmation popup. It does not touch any vanilla UI element, so it can
@@ -33,7 +33,7 @@ internal sealed class ConfirmationOverlay : MonoBehaviour
 
     public static ConfirmationOverlay Create(PluginConfig config)
     {
-        var go = new GameObject("Sam.ConfirmIndoctrination.Overlay");
+        var go = new GameObject("SoberFurry.ConfirmIndoctrination.Overlay");
         DontDestroyOnLoad(go);
         go.hideFlags = HideFlags.HideAndDontSave;
         var overlay = go.AddComponent<ConfirmationOverlay>();

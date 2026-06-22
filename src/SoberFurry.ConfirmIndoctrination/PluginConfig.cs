@@ -1,6 +1,6 @@
 using BepInEx.Configuration;
 
-namespace Sam.ConfirmIndoctrination;
+namespace SoberFurry.ConfirmIndoctrination;
 
 internal enum WorkMode
 {

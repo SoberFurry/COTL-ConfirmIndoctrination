@@ -4,7 +4,7 @@ using HarmonyLib;
 using Lamb.UI;
 using UnityEngine;
 
-namespace Sam.ConfirmIndoctrination;
+namespace SoberFurry.ConfirmIndoctrination;
 
 /// <summary>
 /// EXPERIMENTAL in-screen cancel (Mode = InsideScreen or Both). OFF by default.
@@ -98,7 +98,7 @@ internal static class IndoctrinationScreenPatches
         public static void Ensure()
         {
             if (_instance != null) return;
-            var go = new GameObject("Sam.ConfirmIndoctrination.InScreenCancel");
+            var go = new GameObject("SoberFurry.ConfirmIndoctrination.InScreenCancel");
             DontDestroyOnLoad(go);
             go.hideFlags = HideFlags.HideAndDontSave;
             _instance = go.AddComponent<InScreenCancelButton>();

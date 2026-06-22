@@ -1,15 +1,15 @@
-# Sam ConfirmIndoctrination
+# SoberFurry ConfirmIndoctrination
 
 A BepInEx plugin for **Cult of the Lamb** that prevents accidentally starting the indoctrination of a
 new waiting follower. Before the name/form screen opens it shows "Accept this follower into the cult?".
 
-- GUID: `com.sam.cultofthelamb.confirmindoctrination`
+- GUID: `com.soberfurry.cultofthelamb.confirmindoctrination`
 - Built against: Unity 2022.3.62f2, build 22885603
 - Dependency: BepInEx 5.4.x (COTL pack). COTL_API not required.
 
 ## Install
 ```
-<GameFolder>\BepInEx\plugins\SamMods\ConfirmIndoctrination\
+<GameFolder>\BepInEx\plugins\SoberFurryMods\ConfirmIndoctrination\
 ```
 
 ## Behaviour
@@ -32,4 +32,4 @@ The in-screen cancel (`InsideScreen`/`Both`) is experimental, fail-open and OFF 
 uses `RemoveAllListeners`. It could not be runtime-verified here, so `BeforeScreen` is the guaranteed-safe path.
 
 ## Uninstall
-Run `uninstall_sammods.ps1` or delete `BepInEx\plugins\SamMods\ConfirmIndoctrination\`.
+Run `uninstall_sammods.ps1` or delete `BepInEx\plugins\SoberFurryMods\ConfirmIndoctrination\`.

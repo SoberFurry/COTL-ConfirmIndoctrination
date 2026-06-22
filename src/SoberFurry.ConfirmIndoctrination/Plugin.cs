@@ -8,13 +8,13 @@ using HarmonyLib;
 [assembly: SecurityPermission(System.Security.Permissions.SecurityAction.RequestMinimum, SkipVerification = true)]
 #pragma warning restore CS0618
 
-namespace Sam.ConfirmIndoctrination;
+namespace SoberFurry.ConfirmIndoctrination;
 
-[BepInPlugin(Guid, "Sam ConfirmIndoctrination", "1.0.0")]
+[BepInPlugin(Guid, "SoberFurry ConfirmIndoctrination", "1.0.0")]
 public sealed class Plugin : BaseUnityPlugin
 {
-    public const string Guid = "com.sam.cultofthelamb.confirmindoctrination";
-    private const string LogPrefix = "Sam.ConfirmIndoctrination";
+    public const string Guid = "com.soberfurry.cultofthelamb.confirmindoctrination";
+    private const string LogPrefix = "SoberFurry.ConfirmIndoctrination";
 
     internal static ManualLogSource Log = null!;
     internal static PluginConfig Cfg = null!;

@@ -1,4 +1,4 @@
-# Changelog — Sam ConfirmIndoctrination
+# Changelog — SoberFurry ConfirmIndoctrination
 
 ## 1.0.0 — первый выпуск
 - Подтверждение перед первым принятием нового ожидающего последователя.

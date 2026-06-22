@@ -5,7 +5,7 @@ using System.Reflection;
 using BepInEx.Logging;
 using Newtonsoft.Json.Linq;
 
-namespace Sam.ConfirmIndoctrination;
+namespace SoberFurry.ConfirmIndoctrination;
 
 /// <summary>
 /// Minimal localization: embedded ru/en json, English fallback.
