@@ -61,6 +61,8 @@ internal static class RadialConfirm
             {
                 if (done) return;
                 done = true;
+                // End our camera/time focus before handing off (Accept re-runs the recruit, which sets up its own).
+                try { GameManager.GetInstance().OnConversationEnd(); } catch { }
                 try { if (accept) onAccept?.Invoke(); else onCancel?.Invoke(); }
                 catch (Exception e) { Plugin.Log.LogError($"Confirm callback failed: {e}"); }
             }
@@ -72,6 +74,15 @@ internal static class RadialConfirm
                     Finish(id == AcceptId);
                 }));
             wheel.OnCancel = (Action)Delegate.Combine(wheel.OnCancel, new Action(() => Finish(false)));
+
+            // Pause gameplay + zoom the camera onto the recruit, exactly like the follower interaction wheel.
+            try
+            {
+                GameManager.GetInstance().OnConversationNew();
+                GameManager.GetInstance().OnConversationNext(recruit.gameObject, 4f);
+                HUD_Manager.Instance.Hide(Snap: false, 0);
+            }
+            catch (Exception e) { Plugin.Log.LogWarning($"Confirm camera/pause setup failed (non-fatal): {e.Message}"); }
 
             wheel.Show(recruit, items, instant: false, cancellable: true);
             return true;
