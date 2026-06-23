@@ -10,7 +10,7 @@ using HarmonyLib;
 
 namespace SoberFurry.ConfirmIndoctrination;
 
-[BepInPlugin(Guid, "SoberFurry ConfirmIndoctrination", "1.1.0")]
+[BepInPlugin(Guid, "SoberFurry ConfirmIndoctrination", "1.0.0")]
 [BepInDependency("io.github.xhayper.COTL_API", BepInDependency.DependencyFlags.SoftDependency)]
 public sealed class Plugin : BaseUnityPlugin
 {
@@ -27,7 +27,7 @@ public sealed class Plugin : BaseUnityPlugin
     private void Awake()
     {
         Log = Logger;
-        Log.LogInfo($"[{LogPrefix}] starting v1.1.0");
+        Log.LogInfo($"[{LogPrefix}] starting v1.0.0");
         try
         {
             Cfg = new PluginConfig(base.Config);
