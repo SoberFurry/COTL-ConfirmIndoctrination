@@ -60,8 +60,10 @@
 
 ## 🧩 Другие мои моды
 
-- 🧿 **[MultiNecklaces](https://github.com/SoberFurry/COTL-MultiNecklaces)** — несколько ожерелий на последователе
-- ✅ **[ConfirmIndoctrination](https://github.com/SoberFurry/COTL-ConfirmIndoctrination)** — подтверждение при принятии последователя
+| | Мод | Что делает |
+|:--:|---|---|
+| 👉 | 🧿 **[MultiNecklaces →](https://github.com/SoberFurry/COTL-MultiNecklaces)** | несколько ожерелий на последователе |
+| 📍 | ✅ **ConfirmIndoctrination** *(вы здесь)* | подтверждение при принятии последователя |
 
 <details>
 <summary>🛠️ Сборка из исходников</summary>
