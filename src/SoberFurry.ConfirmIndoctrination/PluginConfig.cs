@@ -28,6 +28,7 @@ internal sealed class PluginConfig
     public readonly ConfigEntry<bool> AllowCancelForTutorial;
     public readonly ConfigEntry<bool> AllowCancelForIntegrations;
     public readonly ConfigEntry<bool> VerboseLogging;
+    public readonly ConfigEntry<bool> UseInGameSettings;
 
     public PluginConfig(ConfigFile cfg)
     {
@@ -51,5 +52,9 @@ internal sealed class PluginConfig
 
         VerboseLogging = cfg.Bind("Diagnostics", "VerboseLogging", false,
             "Extra diagnostic logging.");
+
+        UseInGameSettings = cfg.Bind("UI", "UseInGameSettings", false,
+            "Register settings into COTL_API's in-game 'Mods' tab. OFF by default: on some game builds " +
+            "that tab can freeze the game. Settings are always editable here in this .cfg file.");
     }
 }
