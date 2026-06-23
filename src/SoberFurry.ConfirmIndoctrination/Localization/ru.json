@@ -3,5 +3,12 @@
   "confirm.accept": "Принять",
   "confirm.cancel": "Отмена",
   "inside.cancel": "Отменить посвящение",
-  "inside.hint": "Отменить посвящение (экспериментально)"
+  "inside.hint": "Отменить посвящение (экспериментально)",
+  "settings.category": "Подтверждение посвящения",
+  "settings.mode": "Режим",
+  "settings.default": "Выбор по умолчанию",
+  "settings.debounce": "Задержка ввода (мс)",
+  "settings.tutorial": "Разрешить отмену в обучении",
+  "settings.integrations": "Разрешить отмену для интеграций",
+  "settings.verbose": "Подробный лог"
 }

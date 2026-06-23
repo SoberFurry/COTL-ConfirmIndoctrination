@@ -33,13 +33,13 @@ internal static class CotlApiIntegration
     private static void Register()
     {
         var c = Plugin.Cfg;
-        const string cat = "Confirm Indoctrination";
-        AddEnumDropdown(cat, "Mode", c.Mode);
-        AddEnumDropdown(cat, "Default selection", c.DefaultSelection);
-        CustomSettingsManager.AddBepInExConfig(cat, "Input debounce (ms)", c.InputDebounceMs, 10, MMSlider.ValueDisplayFormat.RawValue);
-        CustomSettingsManager.AddBepInExConfig(cat, "Allow cancel for tutorial", c.AllowCancelForTutorial);
-        CustomSettingsManager.AddBepInExConfig(cat, "Allow cancel for integrations", c.AllowCancelForIntegrations);
-        CustomSettingsManager.AddBepInExConfig(cat, "Verbose logging", c.VerboseLogging);
+        string cat = Localizer.Get("settings.category");
+        AddEnumDropdown(cat, Localizer.Get("settings.mode"), c.Mode);
+        AddEnumDropdown(cat, Localizer.Get("settings.default"), c.DefaultSelection);
+        CustomSettingsManager.AddBepInExConfig(cat, Localizer.Get("settings.debounce"), c.InputDebounceMs, 10, MMSlider.ValueDisplayFormat.RawValue);
+        CustomSettingsManager.AddBepInExConfig(cat, Localizer.Get("settings.tutorial"), c.AllowCancelForTutorial);
+        CustomSettingsManager.AddBepInExConfig(cat, Localizer.Get("settings.integrations"), c.AllowCancelForIntegrations);
+        CustomSettingsManager.AddBepInExConfig(cat, Localizer.Get("settings.verbose"), c.VerboseLogging);
     }
 
     private static void AddEnumDropdown<T>(string category, string name, ConfigEntry<T> entry) where T : struct, Enum

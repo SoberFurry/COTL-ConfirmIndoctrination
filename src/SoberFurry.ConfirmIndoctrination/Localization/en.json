@@ -3,5 +3,12 @@
   "confirm.accept": "Accept",
   "confirm.cancel": "Cancel",
   "inside.cancel": "Cancel indoctrination",
-  "inside.hint": "Cancel indoctrination (experimental)"
+  "inside.hint": "Cancel indoctrination (experimental)",
+  "settings.category": "Confirm Indoctrination",
+  "settings.mode": "Mode",
+  "settings.default": "Default selection",
+  "settings.debounce": "Input debounce (ms)",
+  "settings.tutorial": "Allow cancel for tutorial",
+  "settings.integrations": "Allow cancel for integrations",
+  "settings.verbose": "Verbose logging"
 }

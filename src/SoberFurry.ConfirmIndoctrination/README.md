@@ -43,11 +43,14 @@
 | ✅ **Принять** | штатный экран имени/формы открывается один раз |
 | ❌ **Отмена** | последователь остаётся ждать, ничего не меняется |
 
-## ⚙️ Конфиг
+## ⚙️ Настройки
 
-`BepInEx\config\com.soberfurry.cultofthelamb.confirmindoctrination.cfg` —
+Правятся в `BepInEx\config\com.soberfurry.cultofthelamb.confirmindoctrination.cfg`:
 `Mode` (`BeforeScreen`), `DefaultSelection` (`Cancel`), `InputDebounceMs` (`200`),
 `AllowCancelForTutorial` / `AllowCancelForIntegrations` (`false`), `VerboseLogging` (`false`).
+
+Если установлен **COTL_API** (необязательно) — те же настройки появятся во вкладке **«Mods»** в
+настройках игры.
 
 ## 🛠️ Сборка из исходников
 
